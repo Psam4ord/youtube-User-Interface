@@ -8,10 +8,10 @@ module.exports = {
     },
 
     screens: {
-      'mobile': '375px',
+      'xs-mobile': '375px',
       // => @media (min-width: 375px) { ... }
 
-      'mobileMedium': '420px',
+      'mobile': '428px',
       // => @media (min-width: 420px) { ... }
       
       'tablet': '640px',
