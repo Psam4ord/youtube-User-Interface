@@ -1,8 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./src/**/*.{html,js,jsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif']
+    },
+
+    screens: {
+      'mobile': '375px',
+      // => @media (min-width: 375px) { ... }
+
+      'mobileMedium': '420px',
+      // => @media (min-width: 420px) { ... }
+      
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
   },
   plugins: [],
 }
