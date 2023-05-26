@@ -8,7 +8,7 @@ module.exports = {
     },
 
     screens: {
-      'xs-mobile': '375px',
+      'xsmobile': '375px',
       // => @media (min-width: 375px) { ... }
 
       'mobile': '428px',
