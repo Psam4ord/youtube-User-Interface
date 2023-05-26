@@ -1,5 +1,6 @@
-import React from "react";
-import {vid1} from '../assets/videos/homepagevideos'
+import React from "react"
+import ReactPlayer from "react-player"
+import videosSource from '../assets/videos/homepagevideos'
 
 
 const videos = [
@@ -10,12 +11,9 @@ const videos = [
 
 const VideoPlayer = () => {
     return(
-        <div> 
-
-            <video controls >
-
-            </video>
-        </div>
+        <div>
+        <ReactPlayer url={videosSource} controls />
+      </div>
     )
 
 }
