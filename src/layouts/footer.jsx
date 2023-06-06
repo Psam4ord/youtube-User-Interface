@@ -21,7 +21,7 @@ const Footer = () => {
     return (
         <>
 
-            <div className='xsmobile:w-3/4 h-full p-2 space-y-[20px] float-left '>
+            <div className='xsmobile:w-2/4 h-full p-2 space-y-[20px] float-left '>
                 <div>
                     <h3 className='flex items-center p-1'><BiHomeAlt2 />Home</h3>
                     <h3 className='flex items-center p-1' > <MdOutlineVideoSettings />Shorts </h3>
@@ -82,7 +82,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <hr className='h-[2px] bg-[#cccccc]' />
-                <span className='text-[#cccccc]'>
+
+                <span className='text-[#cccccc] flex space-x-2'>
                     <p className='' translate='no'> &copy;2023 KERRY INC &trade; </p>
                     <p> All rights Reserved  &hearts; </p>
                 </span>

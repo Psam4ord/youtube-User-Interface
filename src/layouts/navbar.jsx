@@ -17,8 +17,8 @@ const NavBar = () => {
                 {/* navbar menu icon */}
                 <Tooltip  text={'Menu'} >
                     <AiOutlineMenu
-                        className='hover:bg-[#cccccc] hover:rounded-full 
-                        p-1 hover:relative inline-block'
+                        className=' hover:bg-[#cccccc] hover:rounded-full 
+                        p-1 relative inline-block'
                         size={40} 
                         />
                         </Tooltip>
@@ -27,7 +27,7 @@ const NavBar = () => {
                 <Tooltip text={'Kerrytube'}>
                     <Logo
                     className='hover:bg-[#cccccc] hover:rounded-full 
-                    p-1 hover:relative inline-block'
+                    p-1 relative inline-block'
                     />
                 </Tooltip >
 
@@ -38,17 +38,19 @@ const NavBar = () => {
                         placeholder='Search...'
                     />
 
-                    {/* navbar search bar */}
+                    {/* navbar search icon */}
                     <Tooltip text={'Search'} >
                         < AiOutlineSearch size={40}
-                            className='hover:bg-[#cccccc] hover:rounded-full p-1'
+                            className=' hover:bg-[#cccccc] hover:rounded-full 
+                            p-1 relative laptop:inline-block'
                         />
                     </Tooltip>
                 </span>
 
                 <Tooltip text={'Upload'}>
                     <AiOutlineCloudUpload
-                        className='hover:bg-[#cccccc] hover:rounded-full p-1'
+                        className='hover:bg-[#cccccc] hover:rounded-full 
+                        p-1 relative inline-block'
                         size={40}
                     />
 
@@ -57,7 +59,8 @@ const NavBar = () => {
                 <Tooltip>
                     {/* navbar-add-video-icon */}
                     <BiVideoPlus
-                        className='hidden hover:bg-[#cccccc] hover:rounded-full p-1'
+                        className='hidden hover:bg-[#cccccc] hover:rounded-full 
+                        p-1 relative laptop:inline-block'
                         size={40}
                     />
                 </Tooltip>
@@ -66,7 +69,8 @@ const NavBar = () => {
                 <Tooltip text={'Notification'}>
                     {/* navbar-notification-icon */}
                     <IoMdNotificationsOutline
-                        className='hover:bg-[#cccccc] hover:rounded-full p-1'
+                        className=' hidden hover:bg-[#cccccc] hover:rounded-full 
+                        p-1 relative laptop:inline-block'
                         size={40} />
                 </Tooltip>
 

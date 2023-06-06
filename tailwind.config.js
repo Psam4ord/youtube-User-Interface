@@ -13,7 +13,7 @@ module.exports = {
 
       'mobile': '428px',
       // => @media (min-width: 420px) { ... }
-      
+
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
 
