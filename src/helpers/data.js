@@ -5,9 +5,8 @@ const user =
 {
     userName: 'Kerry',
     Image: imageUrl,
-    imageSize:45
+    imageSize: 45
 };
-
 
 export const UserProfile = () => {
     return (
@@ -17,8 +16,8 @@ export const UserProfile = () => {
                     src={user.imageUrl}
                     alt=''
                     style={{
-                        width: user.imageSize,
-                        height: user.imageSize
+                    width: user.imageSize,
+                    height: user.imageSize
                     }}
                 />
 

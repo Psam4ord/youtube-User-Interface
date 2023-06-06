@@ -6,10 +6,7 @@ import HomePage from './pages/homepage';
 function App() {
   return (
     <div className="App">
-
-      <NavBar />
-      <HomePage />
-
+      <Footer />
     </div>
   );
 }
