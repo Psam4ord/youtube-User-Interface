@@ -1,15 +1,8 @@
 import React from 'react';
-
 import { BiHomeAlt2 } from 'react-icons/bi'
-import {
-    AiOutlineLike,
-    AiOutlineSetting
-} from 'react-icons/ai'
+import {AiOutlineLike, AiOutlineSetting } from 'react-icons/ai'
 import { IoMdAddCircleOutline, } from 'react-icons/io'
-import {
-    BsTrophy,
-    BsFlag
-} from 'react-icons/bs'
+import { BsTrophy, BsFlag } from 'react-icons/bs'
 import {
     MdOutlineVideoLibrary,
     MdOutlineVideoSettings,
@@ -28,7 +21,7 @@ const Footer = () => {
     return (
         <>
 
-            <div className=' w-2/5  h-full p-2 space-y-[20px] float-left'>
+            <div className='xsmobile:w-3/4 h-full p-2 space-y-[20px] float-left '>
                 <div>
                     <h3 className='flex items-center p-1'><BiHomeAlt2 />Home</h3>
                     <h3 className='flex items-center p-1' > <MdOutlineVideoSettings />Shorts </h3>

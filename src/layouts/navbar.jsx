@@ -1,46 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineCloudUpload } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiVideoPlus } from 'react-icons/bi';
 import Logo from '../commons/logo';
+import Tooltip from '../components/tooltip';
 
 
 
 
 const NavBar = () => {
-    const [isHovered, setIsHovered] = useState(false)
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
-
 
     return (
         <>
-            <div className=' flex flex-row space-x-4 h-1/4 shadow-md p-3' >
+            <div className=' flex flex-row space-x-4 h-1/4 shadow-md p-3 hover:cursor-auto laptop:w-full ' >
 
                 {/* navbar menu icon */}
-                <span >
+                <Tooltip  text={'Menu'} >
                     <AiOutlineMenu
-                        className='hover:bg-[#cccccc] hover:rounded-full p-1'
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                        size={40} />
-                    {isHovered && <div className="hover:float-right">menu</div>}
-                </span >
-
+                        className='hover:bg-[#cccccc] hover:rounded-full 
+                        p-1 hover:relative inline-block'
+                        size={40} 
+                        />
+                        </Tooltip>
 
                 {/* navbar logo icon */}
-                <div>
+                <Tooltip text={'Kerrytube'}>
                     <Logo
-
+                    className='hover:bg-[#cccccc] hover:rounded-full 
+                    p-1 hover:relative inline-block'
                     />
-
-                </div >
+                </Tooltip >
 
                 <span>
                     <input
@@ -49,45 +38,37 @@ const NavBar = () => {
                         placeholder='Search...'
                     />
 
-
                     {/* navbar search bar */}
-                    <button >
+                    <Tooltip text={'Search'} >
                         < AiOutlineSearch size={40}
                             className='hover:bg-[#cccccc] hover:rounded-full p-1'
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
                         />
-                        {isHovered && <div className="relative  left-0 top-0 right-0 bottom-0" >logo </div>}
-                    </button>
+                    </Tooltip>
                 </span>
 
-                <span>
-                    {/* navbar-upload-icon */}
-
+                <Tooltip text={'Upload'}>
                     <AiOutlineCloudUpload
                         className='hover:bg-[#cccccc] hover:rounded-full p-1'
                         size={40}
-                       
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
                     />
-                     {isHovered && <div className="" >upload </div>}
-                </span>
 
-                <span>
+                </Tooltip>
+
+                <Tooltip>
                     {/* navbar-add-video-icon */}
                     <BiVideoPlus
                         className='hidden hover:bg-[#cccccc] hover:rounded-full p-1'
                         size={40}
                     />
-                </span>
+                </Tooltip>
 
-                <span>
+
+                <Tooltip text={'Notification'}>
                     {/* navbar-notification-icon */}
                     <IoMdNotificationsOutline
-                        className='hidden hover:bg-[#cccccc] hover:rounded-full p-1'
+                        className='hover:bg-[#cccccc] hover:rounded-full p-1'
                         size={40} />
-                </span>
+                </Tooltip>
 
             </div>
         </>
