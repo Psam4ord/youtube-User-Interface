@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Footer from './footer';
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineCloudUpload } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiVideoPlus } from 'react-icons/bi';
@@ -8,19 +9,30 @@ import Tooltip from '../components/tooltip';
 
 
 
+
 const NavBar = () => {
+    const [isOpen , setIsOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+        
+      };
 
     return (
         <>
             <div className=' flex flex-row space-x-4 h-1/4 shadow-md p-3 hover:cursor-auto laptop:w-full ' >
 
                 {/* navbar menu icon */}
-                <Tooltip  text={'Menu'} >
-                    <AiOutlineMenu
+                <Tooltip  text={'Menu'}  >
+                    <AiOutlineMenu 
                         className=' hover:bg-[#cccccc] hover:rounded-full 
                         p-1 relative inline-block'
                         size={40} 
+                        onClick={toggleMenu}
                         />
+                        {
+                            isOpen && (<div className='w-72 h-screen'><Footer /> </div>)
+                        }
                         </Tooltip>
 
                 {/* navbar logo icon */}
