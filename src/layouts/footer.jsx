@@ -21,9 +21,9 @@ const Footer = () => {
     return (
         <>
 
-            <div className='xsmobile:w-2/4 h-full p-2 space-y-[20px] float-left '>
-                <div>
-                    <h3 className='flex items-center p-1'><BiHomeAlt2 />Home</h3>
+            <div className='xsmobile:w-2/4 h-full p-2 float-left cursor-pointer shadow-md '>
+                <div >
+                    <h3 className='flex items-center p-1 hover:bg-[]'><BiHomeAlt2 />Home</h3>
                     <h3 className='flex items-center p-1' > <MdOutlineVideoSettings />Shorts </h3>
                     <h3 className='flex items-center p-1'> <MdOutlineSubscriptions /> Subscription </h3>
                 </div>
@@ -38,7 +38,6 @@ const Footer = () => {
                 </div>
 
                 <hr className='h-[2px] bg-[#cccccc]' />
-
 
                 <div>
                     <h2 className=''>Subscription </h2 >
@@ -65,7 +64,7 @@ const Footer = () => {
 
                 <div className='mt-10'>
                     <h2 className=''>About </h2 >
-                    <ul className='font-poppins'>
+                    <ul className='font-poppins '>
                         <a className='hover:text-blue-700' href="#">Contact us </a>
                         <a className='hover:text-blue-700' href="#">Developers </a>
                         <a className='hover:text-blue-700' href="#">Advertise </a>
