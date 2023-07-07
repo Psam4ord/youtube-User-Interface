@@ -25,7 +25,7 @@ const AlanAi = () => {
 
     return (
         <div>
-             <button className='bg-blue-700 text-white rounded-md m-5 p-1 justify-' onClick={() => {
+            <button className='bg-blue-700 text-white rounded-md m-5 p-1 justify-center' onClick={() => {
         alanBtnRef.btnInstance.playText("Hi there, I am Alan");
       }}>Play Sound</button>
 

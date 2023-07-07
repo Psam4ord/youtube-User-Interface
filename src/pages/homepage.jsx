@@ -1,14 +1,13 @@
 import React from 'react'
+import LoginForm from './loginPage';
 
-const HomePage = (name) => {
+const HomePage = () => {
 
     return (
         <>
             <div>
-                <span><h1>Welcome back! </h1>
+              
 
-                    <strong> {'KERRY'}  </strong>   </span>
-            
             </div>
         </>
     )
